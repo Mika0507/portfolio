@@ -8,30 +8,38 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <p>Belén</p>
-    <header>
+    <header class="nav_bar">
+      <p class="personal_name">Belén</p>
       <nav>
-        <ul>
+        <ul class="nav_bar_ul">
           <li><a href="#">About me</a></li>
           <li><a href="#">Studies</a></li>
           <li><a href="#">Certificates</a></li>
           <li><a href="#">Projects</a></li>
           <li><a href="#">Email</a></li>
-          <li><a href="#"><img src="assets/icons/lupa.png" alt="lupa"></a></li>
+          <li>
+            <a href="#"
+              ><img class="lupa" src="assets/icons/lupa.png" alt="lupa"
+            /></a>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="photo_section">
-        <img class="selfphoto" src="assets/images/IMG_20230512_125527.jpg" alt="Portrait photo" />
-        <div>
+        <img
+          class="selfphoto"
+          src="assets/images/IMG_20230512_125527.jpg"
+          alt="Portrait photo"
+        />
+        <div class="text_photo_section">
           <h2>Hi, I'm <span>Belén Alonso</span>.</h2>
           <p>Frontend developer</p>
-          <div>
+          <div class="location">
             <img src="assets/icons/ubicacion.png" alt="ubicacion" />
             <p>Barcelona, Spain</p>
           </div>
-          <div>
+          <div class="social_media">
             <img src="assets/icons/instagram.png" alt="instagram" />
             <img src="assets/icons/github.png" alt="github" />
             <img src="assets/icons/email.png" alt="email" />
@@ -39,76 +47,89 @@
         </div>
       </section>
       <section class="block_presentation_1">
-        <article>
-          <h2>Presentation</h2>
-          <p>
-            Mi primer contacto con el desarrollo Frontend fue en el 2021, cuando
-            al realizar un curso de UX/UI quise ir un poco más allá y comencé a
-            hacer pruebas con HTML y CSS. Así empecé a querer saber más, a
-            profundizar en cómo diseñar e interactuar con una página web. Con
-            ganas de aprender nuevos diseños y aplicarlos a los nuevos
-            proyectos.
-          </p>
-        </article>
-        <article>
-          <h2>Languages</h2>
-          <p>English - B2. Spanich - Native. Catalán - Expert.</p>
-        </article>
-        <article>
-          <h2>Datos interesantes sobre mí</h2>
-          <div>
-            <h3>Books & Comics</h3>
+        <div class="presentation_articles">
+          <article>
+            <h2>Presentation</h2>
             <p>
-              Me gusta leer libros de fantasía y soy una entusiasta de los
-              comics.
+              Mi primer contacto con el desarrollo Frontend fue en el 2021,
+              cuando al realizar un curso de UX/UI quise ir un poco más allá y
+              comencé a hacer pruebas con HTML y CSS. Así empecé a querer saber
+              más, a profundizar en cómo diseñar e interactuar con una página
+              web. Con ganas de aprender nuevos diseños y aplicarlos a los
+              nuevos proyectos.
             </p>
-          </div>
-          <div>
-            <h3>Cats</h3>
-            <p>Me encantan los animales, especialmente los gatos.</p>
-          </div>
-          <div>
-            <h3>Boardgames & Rol play</h3>
-            <p>
-              Tarde de juegos de mesa en casa con los amigos, sin duda un buen
-              plan echo para mí.
-            </p>
-          </div>
-        </article>
+          </article>
+          <article>
+            <h2>Languages</h2>
+            <p>English - B2. Spanich - Native. Catalán - Expert.</p>
+          </article>
+          <article>
+            <h2>Datos interesantes sobre mí</h2>
+            <div>
+              <h3>Books & Comics</h3>
+              <p>
+                Me gusta leer libros de fantasía y soy una entusiasta de los
+                comics.
+              </p>
+            </div>
+            <div>
+              <h3>Cats</h3>
+              <p>Me encantan los animales, especialmente los gatos.</p>
+            </div>
+            <div>
+              <h3>Boardgames & Rol play</h3>
+              <p>
+                Tarde de juegos de mesa en casa con los amigos, sin duda un buen
+                plan echo para mí.
+              </p>
+            </div>
+          </article>
+        </div>
+        <div>
+          <aside class="block_presentation_2">
+            <div>
+              <h2>Technologies and tools</h2>
+              <img src="assets/icons/js.png" alt="javascript" />
+              <img src="assets/icons/css-3.png" alt="css3" />
+              <img src="assets/icons/figma.png" alt="figma" />
+              <img src="assets/icons/html-5.png" alt="html5" />
+            </div>
+            <div class="abilitys">
+              <h2>My abilitys</h2>
+              <div>
+                <img
+                  src="assets/icons/organizado.png"
+                  alt="image of adaptability"
+                />
+                <p>Adaptability</p>
+              </div>
+              <div>
+                <img
+                  src="assets/icons/idea-genial.png"
+                  alt="image of teamwork"
+                />
+                <p>Teamwork</p>
+              </div>
+              <div>
+                <img
+                  src="assets/icons/boligrafo.png"
+                  alt="image of graphic design"
+                />
+                <p>Graphic design</p>
+              </div>
+              <div>
+                <img
+                  src="assets/icons/proceso-creativo.png"
+                  alt="image of arts skills"
+                />
+                <p>Arts skills</p>
+              </div>
+            </div>
+          </aside>
+        </div>
       </section>
-      <hr>
-      <aside class="block_presentation_2">
-        <div>
-          <h2>Technologies and tools</h2>
-          <img src="assets/icons/js.png" alt="javascript" />
-          <img src="assets/icons/css-3.png" alt="css3" />
-          <img src="assets/icons/figma.png" alt="figma" />
-          <img src="assets/icons/html-5.png" alt="html5" />
-        </div>
-        <div>
-          <h2>My abilitys</h2>
-          <img src="assets/icons/organizado.png" alt="image of adaptability" />
-          <p>
-            Adaptability
-          </p>
-          <img src="assets/icons/idea-genial.png" alt="image of teamwork" />
-          <p>
-            Teamwork
-          </p>
-          <img src="assets/icons/boligrafo.png" alt="image of graphic design" />
-          <p>
-            Graphic design
-          </p>
-          <img
-            src="assets/icons/proceso-creativo.png"
-            alt="image of arts skills"
-          />
-          <p>
-            Arts skills
-          </p>
-        </div>
-      </aside>
       <hr />
+
       <article class="studies">
         <h2>Studies</h2>
         <div>
@@ -141,7 +162,7 @@
         <!-- article class = additional preparation icono flecha
             div > img > div > h3 - p-->
       </article>
-      <hr>
+      <hr />
       <article class="certificates">
         <h2>Certificates</h2>
         <div>
@@ -162,7 +183,7 @@
       <article class="projects">
         <h2>Projects</h2>
         <section>
-          <img src="" alt="" />
+          <!-- <img src="" alt="" /> -->
           <div>
             <h3>To Do Task</h3>
             <p>
@@ -175,8 +196,8 @@
       </article>
     </main>
     <footer>
-        <p>Belén Alonso Peral</p>
-        <p>&#169 2023</p>
+      <p>Belén Alonso Peral</p>
+      <!-- <p>&#169 2023</p> -->
     </footer>
   </body>
 </html>

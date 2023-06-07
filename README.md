@@ -45,13 +45,14 @@ Proyecto en desarrollo para la creación de una página personal donde mostrar m
 - [x] Aplicación de estilos.
 Se ha dejado estructurado el esqueleto de la página con la integración de las imágenes y de los iconos. Queda por incorporar las secciones del texto desplegable en los estudios y añadir la sección de estudios adicionales. No se ha avanzado mucho en la hoja de estilos, solo se ha adaptado el tamaño de la imagen y de los iconos, a falta de adaptar algunos. Mi propósito en este proyecto es ser lo más eficiente en la especificidad del código css. 
 
-#### Day One
+#### Day Two
 
 
-###### Jueves 1, Junio 2023
+###### Miércoles 7, Junio 2023
 
-- [] Aplicación de estilos.
-- [] Mejora de la estructura del html.
+- [x] Aplicación de estilos.
+- [x] Mejora de la estructura del html.
+De momento solo se ha mejorado algo de la estructura del html y se ha aplicado estilos para seguir la estructura deseada al diseño de la página en figma.
 
 ## Tecnologías utilizadas
 

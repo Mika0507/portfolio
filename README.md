@@ -54,6 +54,15 @@ Se ha dejado estructurado el esqueleto de la página con la integración de las 
 - [x] Mejora de la estructura del html.
 De momento solo se ha mejorado algo de la estructura del html y se ha aplicado estilos para seguir la estructura deseada al diseño de la página en figma.
 
+#### Day Trhee
+
+
+###### Jueves 8, Junio 2023
+
+- [] Aplicación de estilos.
+- [] Mejora de la estructura del html.
+
+
 ## Tecnologías utilizadas
 
 

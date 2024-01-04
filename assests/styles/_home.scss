@@ -1,0 +1,15 @@
+section{
+    
+    h2{
+        display: none;
+
+    }
+    img{
+        &:hover{
+            background-color: $color-about;
+            h2{
+                display: block;
+            }
+        }
+    }
+}

@@ -1,28 +1,28 @@
-body{
-    background-color: $color-primary;
+body {
+  background-color: $color-primary;
 }
-section {
-  display: grid;
-  height: 100vh;
-  width: 100vw;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-//   Para pantallas de un ancho de 1920 x 1080.
-// Para pantallas más pequeñas se necesita un padding de : 0 14.4em
-  padding: 0 18em;
-  h2 {
-    display: none;
-  }
-  div {
-    width: 35vw;
-    height: 50vh;
-    img {
-      width: 100%;
-      height: 100%;
+.home-page {
+  section {
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    //   Para pantallas de un ancho de 1920 x 1080.
+    // Para pantallas más pequeñas se necesita un padding de : 0 14.4em
+    padding: 0 18em;
+    h2 {
+      display: none;
     }
-  }
-  .ilustration-about:hover {
-
+    div {
+      width: 35vw;
+      height: 50vh;
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .ilustration-about:hover {
       img {
         display: none;
       }
@@ -32,61 +32,55 @@ section {
       align-items: center;
       h2 {
         display: block;
-        font-family: 'Cormorant Garamond', serif;
+        font-family: "Cormorant Garamond", serif;
         font-size: 68px;
         color: $color-primary;
       }
-
+    }
+    .ilustration-portfolio:hover {
+      img {
+        display: none;
+      }
+      background-color: $color-portfolio;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        display: block;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 68px;
+        color: $color-contact;
+      }
+    }
+    .ilustration-ui-design:hover {
+      img {
+        display: none;
+      }
+      background-color: $color-ui-design;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        display: block;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 68px;
+        color: $color-about;
+      }
+    }
+    .ilustration-contact:hover {
+      img {
+        display: none;
+      }
+      background-color: $color-contact;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      h2 {
+        display: block;
+        font-family: "Cormorant Garamond", serif;
+        font-size: 68px;
+        color: $color-primary;
+      }
+    }
   }
-  .ilustration-portfolio:hover {
-
-    img {
-      display: none;
-    }
-    background-color: $color-portfolio;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      display: block;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 68px;
-      color: $color-contact;
-    }
-
-}
-.ilustration-ui-design:hover {
-
-    img {
-      display: none;
-    }
-    background-color: $color-ui-design;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      display: block;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 68px;
-      color: $color-about;
-    }
-
-}
-.ilustration-contact:hover {
-
-    img {
-      display: none;
-    }
-    background-color: $color-contact;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    h2 {
-      display: block;
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 68px;
-      color: $color-primary;
-    }
-
-}
 }

@@ -1,4 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Give+You+Glory&family=Hind+Vadodara&display=swap");
+body {
+  background-color: #554333;
+}
+
 section {
   display: grid;
   height: 100vh;

@@ -1,9 +1,14 @@
+body{
+    background-color: $color-primary;
+}
 section {
   display: grid;
   height: 100vh;
   width: 100vw;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
+//   Para pantallas de un ancho de 1920 x 1080.
+// Para pantallas más pequeñas se necesita un padding de : 0 14.4em
   padding: 0 18em;
   h2 {
     display: none;

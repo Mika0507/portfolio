@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500&family=Give+You+Glory&family=Hind+Vadodara&display=swap");
+section {
+  display: grid;
+  height: 100vh;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 0 18em;
+}
+section h2 {
+  display: none;
+}
+section div {
+  width: 35vw;
+  height: 50vh;
+}
+section div img {
+  width: 100%;
+  height: 100%;
+}
+section .ilustration-about:hover {
+  background-color: #FFF4D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .ilustration-about:hover img {
+  display: none;
+}
+section .ilustration-about:hover h2 {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 68px;
+  color: #554333;
+}
+section .ilustration-portfolio:hover {
+  background-color: #DD845A;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .ilustration-portfolio:hover img {
+  display: none;
+}
+section .ilustration-portfolio:hover h2 {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 68px;
+  color: #E4E7D4;
+}
+section .ilustration-ui-design:hover {
+  background-color: #D3B04D;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .ilustration-ui-design:hover img {
+  display: none;
+}
+section .ilustration-ui-design:hover h2 {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 68px;
+  color: #FFF4D6;
+}
+section .ilustration-contact:hover {
+  background-color: #E4E7D4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section .ilustration-contact:hover img {
+  display: none;
+}
+section .ilustration-contact:hover h2 {
+  display: block;
+  font-family: "Cormorant Garamond", serif;
+  font-size: 68px;
+  color: #554333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}/*# sourceMappingURL=style.css.map */

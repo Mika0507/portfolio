@@ -1,23 +1,97 @@
-.page-about{
-    background-color: $color-about;
-    header{
-        height: 20%;
-        border-bottom: 4px double $color-primary;
-        nav{
-            width: 80%;
-            margin: 1em auto;
-            ul{
-                display: flex;
-                justify-content: space-between;
-                align-items: center;
-            }
-        }
-    }
-    main{
+.page-about {
+  background-color: $color-about;
+  header {
+    height: 20%;
+    border-bottom: 4px double $color-primary;
+    nav {
+      width: 80%;
+      margin: 1em auto;
+      ul {
         display: flex;
-        justify-content:  space-evenly;
+        justify-content: space-between;
         align-items: center;
-        margin-top: 5em;
-        
+        li{
+            list-style: none;
+        }
+        .nav-bar-dot{
+            width: 10px;
+            height: 10px;
+            background-color: $color-primary;
+            border-radius: 50%;
+        }
+        a{
+            text-decoration: none;
+            font-family: 'Hind Vadodara', sans-serif;
+            font-weight:500;
+            font-size: 24px;
+            color: $color-primary;
+        }
+      }
     }
+  }
+  main {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 5em;
+    section:first-child {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1em;
+      padding: 2em 10em 2em 0;
+      margin-left: 8em;
+      border-right: 1px solid $color-primary;
+      h2 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 48px;
+        color: $color-primary;
+      }
+      h3 {
+        font-family: "Give You Glory", cursive;
+        font-size: 24px;
+        color: $color-portfolio;
+      }
+      div {
+        margin-top: 3em;
+        width: 8em;
+        display: flex;
+        justify-content: space-between;
+      }
+    }
+    section:last-child {
+        width: 50vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+      h1 {
+        font-family: "Cormorant Garamond", serif;
+        font-size: 68px;
+        color: $color-primary;
+      }
+      p{
+        font-family: 'Hind Vadodara', sans-serif;
+        font-size: 16px;
+      }
+      h1 + p{
+        margin: 3em 0 1.5em;
+      }
+      span{
+        font-family: 'Hind Vadodara', sans-serif;
+        color: $color-portfolio;
+        font-size: 14px;
+        margin-top: 1em;
+      }
+      button{
+        margin: 1em 0;
+        width: 10em;
+        height: 3.5em;
+        border: none;
+        background-color: $color-portfolio;
+        color: $color-about;
+        box-shadow: 4px 4px 4px rgba($color-portfolio, $alpha: 0.3);
+      }
+    }
+  }
 }

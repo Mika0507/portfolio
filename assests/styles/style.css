@@ -99,11 +99,86 @@ body {
   justify-content: space-between;
   align-items: center;
 }
+.page-about header nav ul li {
+  list-style: none;
+}
+.page-about header nav ul .nav-bar-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #554333;
+  border-radius: 50%;
+}
+.page-about header nav ul a {
+  text-decoration: none;
+  font-family: "Hind Vadodara", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #554333;
+}
 .page-about main {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5em;
+}
+.page-about main section:first-child {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 2em 10em 2em 0;
+  margin-left: 8em;
+  border-right: 1px solid #554333;
+}
+.page-about main section:first-child h2 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 48px;
+  color: #554333;
+}
+.page-about main section:first-child h3 {
+  font-family: "Give You Glory", cursive;
+  font-size: 24px;
+  color: #DD845A;
+}
+.page-about main section:first-child div {
+  margin-top: 3em;
+  width: 8em;
+  display: flex;
+  justify-content: space-between;
+}
+.page-about main section:last-child {
+  width: 50vw;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+.page-about main section:last-child h1 {
+  font-family: "Cormorant Garamond", serif;
+  font-size: 68px;
+  color: #554333;
+}
+.page-about main section:last-child p {
+  font-family: "Hind Vadodara", sans-serif;
+  font-size: 16px;
+}
+.page-about main section:last-child h1 + p {
+  margin: 3em 0 1.5em;
+}
+.page-about main section:last-child span {
+  font-family: "Hind Vadodara", sans-serif;
+  color: #DD845A;
+  font-size: 14px;
+  margin-top: 1em;
+}
+.page-about main section:last-child button {
+  margin: 1em 0;
+  width: 10em;
+  height: 3.5em;
+  border: none;
+  background-color: #DD845A;
+  color: #FFF4D6;
+  box-shadow: 4px 4px 4px rgba(221, 132, 90, 0.3);
 }
 
 * {

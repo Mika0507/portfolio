@@ -30,7 +30,9 @@ header {
 }
 .page-about {
   background-color: $color-about;
-  
+  .email{
+    display: none;
+  }
   main {
     display: flex;
     justify-content: space-evenly;
@@ -93,6 +95,14 @@ header {
         background-color: $color-portfolio;
         color: $color-about;
         box-shadow: 4px 4px 4px rgba($color-portfolio, $alpha: 0.3);
+      }
+      .show-email:active{
+        .email{
+          display: block;
+          color: $color-primary;
+          font-family: 'Hind Vadodara', sans-serif;
+          font-size: 18px;
+        }
       }
     }
   }

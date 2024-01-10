@@ -11,6 +11,9 @@ body {
   grid-template-rows: 1fr 1fr;
   padding: 0 18em;
 }
+.home-page section a {
+  text-decoration: none;
+}
 .home-page section h2 {
   display: none;
 }

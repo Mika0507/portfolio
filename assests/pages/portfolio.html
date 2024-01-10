@@ -1,66 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio</title>
-</head>
-<body>
+    <link rel="stylesheet" href="../styles/style.css" />
+  </head>
+  <body class="page-portfolio">
     <header>
-        <nav>
-            <ul>
-                <li><a href="#"><img src="../icons/fa6-solid_house-chimney.png" alt="icon house"></a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-                <li><a href="#">UI-DESIGN</a></li>
-                <li><a href="#">CONTACT</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <ul>
+          <li>
+            <a href="#"
+              ><img src="../icons/fa6-solid_house-chimney.png" alt="icon house"
+            /></a>
+          </li>
+          <li><a href="#">ABOUT</a></li>
+          <div class="nav-bar-dot"></div>
+          <li><a href="#">PORTFOLIO</a></li>
+          <div class="nav-bar-dot"></div>
+          <li><a href="#">UI-DESIGN</a></li>
+          <div class="nav-bar-dot"></div>
+          <li><a href="#">CONTACT</a></li>
+        </ul>
+      </nav>
     </header>
     <main>
-        <!-- Esta página contiene diferentes secciones donde se muestran los proyectos. De momento están ordenados de manera que los hovers de cada uno están justo debajo del article original y una section con la clase modal que es la imagen emergente donde se muestra con más detalle las características del proyecto -->
+      <!-- Esta página contiene diferentes secciones donde se muestran los proyectos. De momento están ordenados de manera que los hovers de cada uno están justo debajo del article original y una section con la clase modal que es la imagen emergente donde se muestra con más detalle las características del proyecto -->
+      <article>
+        <div>
+          <h3>Title</h3>
+        </div>
+        <!-- <img src="../images/MacBook Air - 1.jpg" alt="image project" /> -->
+      </article>
+      <article class="hover-card">
+        <a href="#"
+          ><span>HTML</span>
+          <span>CSS</span>
+          <span>JAVASCRIPT</span>
+          </a>
+      </article>
+      <section class="modal">
+        <img src="" alt="imge project" />
         <article>
-            <div>
-                <h3>Title</h3>
-            </div>
-            <img src="" alt="image project">
+          <h2>Title</h2>
+          <h3>Subtitle</h3>
+          <p></p>
+          <button>VIEW PROJECT</button>
         </article>
-        <article class="hover-card">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JAVASCRIPT</span>
-        </article>
-        <section class="modal">
-            <img src="" alt="imge project">
-            <article>
-                <h2>Title</h2>
-                <h3>Subtitle</h3>
-                <p></p>
-                <button>VIEW PROJECT</button>
-            </article>
-        </section>
-        <article>
-            <div>
-                <h3>Title</h3>
-            </div>
-            <img src="" alt="image project">
-        </article>
-        <article class="hover-card">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JAVASCRIPT</span>
-        </article>
-        <article>
-            <div>
-                <h3>Title</h3>
-            </div>
-            <img src="" alt="image project">
-        </article>
-        <article class="hover-card">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JAVASCRIPT</span>
-        </article>
+      </section>
+      <article>
+        <div>
+          <h3>Title</h3>
+        </div>
+        <!-- <img src="" alt="image project" /> -->
+      </article>
+      <article class="hover-card">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JAVASCRIPT</span>
+      </article>
+      <article>
+        <div>
+          <h3>Title</h3>
+        </div>
+        <!-- <img src="" alt="image project" /> -->
+      </article>
+      <article class="hover-card">
+        <span>HTML</span>
+        <span>CSS</span>
+        <span>JAVASCRIPT</span>
+      </article>
     </main>
-</body>
+  </body>
 </html>

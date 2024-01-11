@@ -9,7 +9,7 @@ body {
   width: 100vw;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 0 18em;
+  padding: 0 14.4em;
 }
 .home-page section a {
   text-decoration: none;
@@ -210,7 +210,6 @@ header nav ul a {
   margin: 5em auto;
   width: 21.25em;
   height: 18.375em;
-  background-image: url(../images/MacBook\ Air\ -\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;

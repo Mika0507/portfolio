@@ -58,16 +58,13 @@ body {
   font-size: 68px;
   color: #E4E7D4;
 }
-.home-page section .ilustration-ui-design:hover {
+.home-page section .ilustration-ui-design {
   background-color: #D3B04D;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-.home-page section .ilustration-ui-design:hover img {
-  display: none;
-}
-.home-page section .ilustration-ui-design:hover h2 {
+.home-page section .ilustration-ui-design h2 {
   display: block;
   font-family: "Cormorant Garamond", serif;
   font-size: 68px;

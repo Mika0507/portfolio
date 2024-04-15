@@ -54,10 +54,7 @@ body {
         color: $color-contact;
       }
     }
-    .ilustration-ui-design:hover {
-      img {
-        display: none;
-      }
+    .ilustration-ui-design {
       background-color: $color-ui-design;
       display: flex;
       justify-content: center;

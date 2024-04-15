@@ -11,14 +11,13 @@
       <nav>
         <ul>
           <li>
-            <a href="../../index.html"><img src="../icons/fa6-solid_house-chimney.png" alt="icon house"
+            <a href="../../index.html"
+              ><img src="../icons/fa6-solid_house-chimney.png" alt="icon house"
             /></a>
           </li>
           <li><a href="../pages/about.html">ABOUT</a></li>
           <div class="nav-bar-dot"></div>
           <li><a href="../pages/portfolio.html">PORTFOLIO</a></li>
-          <div class="nav-bar-dot"></div>
-          <li><a href="../pages/uidesign.html">UI-DESIGN</a></li>
           <div class="nav-bar-dot"></div>
           <li><a href="../pages/contact.html">CONTACT</a></li>
         </ul>
@@ -26,49 +25,56 @@
     </header>
     <main>
       <section>
-        <img src="../images/my-photo.png" alt="my photo" />
+        <img class="avatar" src="../images/my-photo.png" alt="my photo" />
         <h2>Belén Alonso Peral</h2>
         <h3>Junior FullStack Developer</h3>
         <div>
-          <a href=""
+          <a href="https://github.com/Mika0507"
             ><img src="../icons/fa6-brands_github-alt.png" alt="github icon"
           /></a>
-          <a href=""
+          <a href="https://www.linkedin.com/in/belen-alonso-peral/"
             ><img src="../icons/bxl_linkedin.png" alt="linkedin icon"
           /></a>
         </div>
       </section>
       <section>
         <h1>Let me introduce myself</h1>
+
         <p>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-          dolore hic, nesciunt beatae et repellendus a, repudiandae nemo libero
-          numquam nobis tempora nisi? Nemo eaque sint ipsa, dolorum autem animi?
+          My name is Belén Alonso. Since I was young, I have been fascinated by
+          creativity and the ability to bring ideas to life through design. With
+          that background in design and a budding interest in development, I
+          embarked on a journey into the technology sector with a sense of
+          curiosity and determination. <br />
+
+          My story in the technology sector is a testament to my determination
+          to achieve my goals and challenge my own limits. Although I find
+          myself in the early stages of my career in development, my enthusiasm
+          and commitment are unwavering. <br />
+          With every line of code I write and every design I visualize, I strive
+          to merge aesthetics and functionality harmoniously. I am determined to
+          test my skills and learn from every challenge I encounter on this
+          exciting journey. <br />
+
+          My goal is not only to master the tools and technologies of
+          development, but also to leave a significant mark through my
+          creations. I am ready to fully immerse myself in this dynamic and
+          thrilling world, and I am eager to demonstrate what I am capable of
+          achieving. <br />
+          I am excited for what the future holds in this exciting journey of
+          development and design!
         </p>
-        <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic magnam
-          id obcaecati molestiae quibusdam aut quis dolore. Id et, consequatur
-          perspiciatis distinctio inventore eius nesciunt molestiae expedita eos
-          minima iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-          Hic magnam id obcaecati molestiae quibusdam aut quis dolore. Id et,
-          consequatur perspiciatis distinctio inventore eius nesciunt molestiae
-          expedita eos minima iure?
-        </p>
-        <p>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic magnam
-            id obcaecati molestiae quibusdam aut quis dolore. Id et, consequatur
-            perspiciatis distinctio inventore eius nesciunt molestiae expedita eos
-            minima iure? Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-            Hic magnam id obcaecati molestiae quibusdam aut quis dolore. Id et,
-            consequatur perspiciatis distinctio inventore eius nesciunt molestiae
-            expedita eos minima iure?
-          </p>
-        <span>Click here to get my resume</span>
-        <button>CURRICULUM</button>
-        <span>Click here to be in contact</span>
-        <button class="show-email">CONTACT</button>
-        <p class="email">alonsoperalbelen@gmail.com</p>
+        <article>
+          <span>Click here to get my resume</span>
+          <button><a href="https://drive.google.com/file/d/1RuS_Vg2FfwODMCOHDmZvfWRaGhuMfdhp/view?usp=drive_link" target="_blank">CURRICULUM</a></button>
+          <span>Click here to be in contact</span>
+          <div>
+            <button class="show-email" onclick="toggleEmail()">CONTACT</button>
+            <p class="email" id="email">alonsoperalbelen@gmail.com</p>
+          </div>
+        </article>
       </section>
     </main>
+    <script src="../javascript/toggleEmail.js"></script>
   </body>
 </html>

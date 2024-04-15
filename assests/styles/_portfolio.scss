@@ -13,7 +13,7 @@
       margin: 5em auto;
       width: 21.25em;
       height: 18.375em;
-      // background-image: url(../images/MacBook\ Air\ -\ 1.jpg);
+      background-image: url(../images/MacBook\ Air\ -\ 1.jpg);
       background-repeat: no-repeat;
       background-size: cover;
       position: relative;
@@ -38,10 +38,10 @@
       }
       &:hover {
         background-image: none;
-
+        background-color: rgba($color: #0000006a, $alpha: 0.5);
         .hover-card {
           display: block;
-          background-color: rgba($color: #0000006a, $alpha: 0.5);
+
           span {
             background-color: #000000;
             color: $color-text-white;

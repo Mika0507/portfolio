@@ -3,13 +3,16 @@ body {
   background-color: #554333;
 }
 
+.home-page {
+  display: grid;
+  justify-content: center;
+}
 .home-page section {
   display: grid;
   height: 100vh;
-  width: 100vw;
+  width: 70vw;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  padding: 0 14.4em;
 }
 .home-page section a {
   text-decoration: none;
@@ -119,9 +122,6 @@ header nav ul a {
 .page-about {
   background-color: #FFF4D6;
 }
-.page-about .email {
-  display: none;
-}
 .page-about main {
   display: flex;
   justify-content: space-evenly;
@@ -137,6 +137,9 @@ header nav ul a {
   padding: 2em 4em 2em 0;
   margin-left: 4em;
   border-right: 1px solid #554333;
+}
+.page-about main section:first-child .avatar {
+  width: 20em;
 }
 .page-about main section:first-child h2 {
   font-family: "Cormorant Garamond", serif;
@@ -158,7 +161,8 @@ header nav ul a {
   width: 50vw;
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 1em;
 }
 .page-about main section:last-child h1 {
   font-family: "Cormorant Garamond", serif;
@@ -169,16 +173,21 @@ header nav ul a {
   font-family: "Hind Vadodara", sans-serif;
   font-size: 16px;
 }
-.page-about main section:last-child h1 + p {
-  margin: 3em 0 1.5em;
+.page-about main section:last-child article {
+  display: flex;
+  flex-direction: column;
 }
-.page-about main section:last-child span {
+.page-about main section:last-child article span {
   font-family: "Hind Vadodara", sans-serif;
   color: #DD845A;
   font-size: 14px;
   margin-top: 1em;
 }
-.page-about main section:last-child button {
+.page-about main section:last-child article a {
+  text-decoration: none;
+  color: #FFF4D6;
+}
+.page-about main section:last-child article button {
   margin: 1em 0;
   width: 10em;
   height: 3.5em;
@@ -186,9 +195,15 @@ header nav ul a {
   background-color: #DD845A;
   color: #FFF4D6;
   box-shadow: 4px 4px 4px rgba(221, 132, 90, 0.3);
+  cursor: pointer;
 }
-.page-about main section:last-child .show-email:active .email {
-  display: block;
+.page-about main section:last-child article div {
+  display: flex;
+  align-items: center;
+  gap: 3em;
+}
+.page-about main section:last-child article .email {
+  display: none;
   color: #554333;
   font-family: "Hind Vadodara", sans-serif;
   font-size: 18px;
@@ -210,6 +225,7 @@ header nav ul a {
   margin: 5em auto;
   width: 21.25em;
   height: 18.375em;
+  background-image: url(../images/MacBook\ Air\ -\ 1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
@@ -236,10 +252,10 @@ header nav ul a {
 }
 .page-portfolio main article:hover {
   background-image: none;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 .page-portfolio main article:hover .hover-card {
   display: block;
-  background-color: rgba(0, 0, 0, 0.5);
 }
 .page-portfolio main article:hover .hover-card span {
   background-color: #000000;

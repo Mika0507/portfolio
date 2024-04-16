@@ -1,3 +1,53 @@
+nav.nav-portfolio {
+  width: 80%;
+  margin: 1em auto;
+  ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    li {
+      list-style: none;
+    }
+    .nav-bar-dot {
+      width: 10px;
+      height: 10px;
+      background-color: $color-primary;
+      border-radius: 50%;
+    }
+    a {
+      text-decoration: none;
+      font-family: "Hind Vadodara", sans-serif;
+      font-weight: 500;
+      font-size: 24px;
+      color: $color-primary;
+      position: relative;
+      transition: all 0.5s;
+      &:after,
+      &:before {
+        transition: all 0.5s;
+      }
+      &:hover {
+        color: $color-about;
+      }
+      &:after {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: 0%;
+        content: ".";
+        color: transparent;
+        background: $color-about;
+        height: 2px;
+      }
+      &:hover:after {
+        width: 100%;
+      }
+    }
+  }
+}
+
 .page-portfolio {
   background-color: $color-portfolio;
 
@@ -86,5 +136,13 @@
         }
       }
     }
+  }
+  footer {
+    margin-top: 1em;
+    height: 4em;
+    border-top: 3px double $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

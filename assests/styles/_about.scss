@@ -23,13 +23,36 @@ header {
         font-weight: 500;
         font-size: 24px;
         color: $color-primary;
+        position: relative;
+        transition: all .5s;
+        &:after, &:before {
+          transition: all .5s;
+        }
+        &:hover {
+          color: $color-portfolio;
+        }
+        &:after {
+          position: absolute;
+          bottom: 0;
+          left: 0;
+          right: 0;
+          margin: auto;
+          width: 0%;
+          content: '.';
+          color: transparent;
+          background:$color-portfolio;
+          height: 2px;
+        }
+        &:hover:after {
+          width: 100%;
+        }
       }
     }
   }
 }
 .page-about {
   background-color: $color-about;
-  
+
   main {
     display: flex;
     justify-content: space-evenly;
@@ -88,7 +111,7 @@ header {
           font-size: 14px;
           margin-top: 1em;
         }
-        a{
+        a {
           text-decoration: none;
           color: $color-about;
         }
@@ -102,7 +125,7 @@ header {
           box-shadow: 4px 4px 4px rgba($color-portfolio, $alpha: 0.3);
           cursor: pointer;
         }
-        div{
+        div {
           display: flex;
           align-items: center;
           gap: 3em;
@@ -115,5 +138,13 @@ header {
         }
       }
     }
+  }
+  footer {
+    margin-top: 1em;
+    height: 4em;
+    border-top: 3px double $color-primary;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

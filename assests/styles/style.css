@@ -115,6 +115,29 @@ header nav ul a {
   font-weight: 500;
   font-size: 24px;
   color: #554333;
+  position: relative;
+  transition: all 0.5s;
+}
+header nav ul a:after, header nav ul a:before {
+  transition: all 0.5s;
+}
+header nav ul a:hover {
+  color: #DD845A;
+}
+header nav ul a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #DD845A;
+  height: 2px;
+}
+header nav ul a:hover:after {
+  width: 100%;
 }
 
 .page-about {
@@ -206,6 +229,63 @@ header nav ul a {
   font-family: "Hind Vadodara", sans-serif;
   font-size: 18px;
 }
+.page-about footer {
+  margin-top: 1em;
+  height: 4em;
+  border-top: 3px double #554333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav.nav-portfolio {
+  width: 80%;
+  margin: 1em auto;
+}
+nav.nav-portfolio ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+nav.nav-portfolio ul li {
+  list-style: none;
+}
+nav.nav-portfolio ul .nav-bar-dot {
+  width: 10px;
+  height: 10px;
+  background-color: #554333;
+  border-radius: 50%;
+}
+nav.nav-portfolio ul a {
+  text-decoration: none;
+  font-family: "Hind Vadodara", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  color: #554333;
+  position: relative;
+  transition: all 0.5s;
+}
+nav.nav-portfolio ul a:after, nav.nav-portfolio ul a:before {
+  transition: all 0.5s;
+}
+nav.nav-portfolio ul a:hover {
+  color: #FFF4D6;
+}
+nav.nav-portfolio ul a:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: ".";
+  color: transparent;
+  background: #FFF4D6;
+  height: 2px;
+}
+nav.nav-portfolio ul a:hover:after {
+  width: 100%;
+}
 
 .page-portfolio {
   background-color: #DD845A;
@@ -292,79 +372,13 @@ header nav ul a {
   background-color: #DD845A;
   box-shadow: 4px 4px 4px rgba(221, 132, 90, 0.5);
 }
-
-.page-uidesign {
-  background-color: #D3B04D;
-}
-.page-uidesign main {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr;
-}
-.page-uidesign main .modal {
-  display: none;
-}
-.page-uidesign main article {
-  margin: 5em auto;
-  width: 21.25em;
-  height: 18.375em;
-  background-image: url(../images/MacBook\ Air\ -\ 1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
-.page-uidesign main article img:last-child {
-  width: 100%;
-  height: 100%;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
-.page-uidesign main article div {
-  width: 100%;
-  height: 3em;
-  background-color: #fff;
+.page-portfolio footer {
+  margin-top: 1em;
+  height: 4em;
+  border-top: 3px double #554333;
   display: flex;
   justify-content: center;
   align-items: center;
-  position: absolute;
-}
-.page-uidesign main article div h3 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 24px;
-  color: #554333;
-}
-.page-uidesign main article:active .modal {
-  background-color: #FFF4D6;
-  display: block;
-  width: 60em;
-  height: 28.625em;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  box-shadow: 4px 4px 4px rgba(85, 67, 51, 0.5);
-}
-.page-uidesign main article:active .modal img {
-  width: 26.875em;
-  height: 23.625em;
-}
-.page-uidesign main article:active .modal article h2 {
-  font-family: "Cormorant Garamond", serif;
-  font-size: 48px;
-  color: #554333;
-}
-.page-uidesign main article:active .modal article h3 {
-  font-family: "Give You Glory", cursive;
-  font-size: 24px;
-  color: #D3B04D;
-}
-.page-uidesign main article:active .modal article p {
-  font-family: "Hind Vadodara", sans-serif;
-}
-.page-uidesign main article:active .modal article button {
-  width: 10em;
-  height: 3.5em;
-  background-color: #DD845A;
-  box-shadow: 4px 4px 4px rgba(221, 132, 90, 0.5);
 }
 
 .page-contact {
@@ -423,6 +437,14 @@ header nav ul a {
   width: 8em;
   display: flex;
   justify-content: space-between;
+}
+.page-contact footer {
+  margin-top: 1em;
+  height: 4em;
+  border-top: 3px double #554333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {

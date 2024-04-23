@@ -369,16 +369,20 @@ nav.nav-portfolio ul a:hover::after {
 .page-portfolio main .modal-content div div {
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: space-around;
+  align-items: center;
 }
 .page-portfolio main .modal-content div div button {
   width: 10em;
   height: 3.5em;
   background-color: #DD845A;
-  color: #FFF4D6;
   border: none;
   box-shadow: 4px 4px 4px rgba(221, 132, 90, 0.5);
   cursor: pointer;
+}
+.page-portfolio main .modal-content div div button a {
+  text-decoration: none;
+  color: #FFF4D6;
 }
 .page-portfolio main article {
   margin: 5em auto;
@@ -474,7 +478,7 @@ nav.nav-portfolio ul a:hover::after {
   background: #DD845A;
   color: #FFF4D6;
 }
-.page-portfolio footer {
+.page-portfolio main footer {
   margin-top: 1em;
   height: 4em;
   border-top: 3px double #554333;

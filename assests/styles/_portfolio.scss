@@ -22,14 +22,14 @@ nav.nav-portfolio {
       color: $color-primary;
       position: relative;
       transition: all 0.5s;
-      &:after,
-      &:before {
+      &::after,
+      &::before {
         transition: all 0.5s;
       }
       &:hover {
         color: $color-about;
       }
-      &:after {
+      &::after {
         position: absolute;
         bottom: 0;
         left: 0;
@@ -41,7 +41,7 @@ nav.nav-portfolio {
         background: $color-about;
         height: 2px;
       }
-      &:hover:after {
+      &:hover::after {
         width: 100%;
       }
     }
@@ -55,83 +55,185 @@ nav.nav-portfolio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
-    .hover-card,
+
     .modal {
       display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.5);
+      z-index: 20;
+      animation: openModal 0.3s ease-in-out 1 normal;
+    }
+
+    @keyframes openModal {
+      from {
+        opacity: 0;
+      }
+    
+      to {
+        opacity: 1;
+      }
+    }
+
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      padding: 2em;
+      background-color: $color-contact;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 60em;
+      box-shadow: 4px 4px 4px rgba($color-primary, $alpha: 0.5);
+      .modal-close {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 3em;
+        transform: translateY(3px);
+        border: none;
+        outline: none;
+        background-color: transparent;
+        box-shadow: none;
+        color: $color-portfolio;
+        cursor: pointer;
+      }
+      img {
+        object-fit: contain;
+        width: 24.875em;
+        height: 22.625em;
+      }
+      div {
+        position: relative;
+        margin-left: 1.5em;
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+
+        h2 {
+          font-family: "Cormorant Garamond", serif;
+          font-size: 48px;
+          color: $color-primary;
+        }
+        h3 {
+          font-family: "Give You Glory", cursive;
+          font-size: 24px;
+          color: $color-portfolio;
+        }
+        p {
+          font-family: "Hind Vadodara", sans-serif;
+        }
+        div{
+          display: flex;
+          flex-direction: row;
+          justify-content: flex-end;
+          button {
+          width: 10em;
+          height: 3.5em;
+          background-color: $color-portfolio;
+          color: $color-about;
+          border: none;
+          box-shadow: 4px 4px 4px rgba($color-portfolio, $alpha: 0.5);
+          cursor: pointer;
+        }
+        }
+        
+      }
     }
     article {
       margin: 5em auto;
       width: 21.25em;
       height: 18.375em;
-      background-image: url(../images/MacBook\ Air\ -\ 1.jpg);
-      background-repeat: no-repeat;
-      background-size: cover;
+      padding: 1.5rem;
+      display: flex;
+      align-items: center;
+      transition: 0.4s ease-out;
       position: relative;
-      img:last-child {
+      &:hover {
+        transform: translateY(20px);
+        &:before {
+          opacity: 1;
+        }
+        .hover-card {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        display: block;
+        width: 100%;
+        height: 100%;
+        background: rgba(black, 0.6);
+        z-index: 2;
+        transition: 0.5s;
+        opacity: 0;
+      }
+      img {
+        position: absolute;
+        top: 0;
+        left: 0;
         width: 100%;
         height: 100%;
         object-fit: cover;
+        z-index: 1;
       }
       div {
         width: 100%;
         height: 3em;
-        background-color: $color-text-white;
+        background-color: $color-about;
         display: flex;
         justify-content: center;
         align-items: center;
         position: absolute;
+        z-index: 4;
+        top: 0;
+        left: 0;
         h3 {
           font-family: "Cormorant Garamond", serif;
           font-size: 24px;
           color: $color-primary;
         }
       }
-      &:hover {
-        background-image: none;
-        background-color: rgba($color: #0000006a, $alpha: 0.5);
-        .hover-card {
-          display: block;
-
-          span {
-            background-color: #000000;
-            color: $color-text-white;
-          }
+      .hover-card {
+        background-color: transparent;
+        position: relative;
+        z-index: 3;
+        color: white;
+        opacity: 0;
+        transform: translateY(30px);
+        transition: 0.5s;
+        padding: 1.5rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        align-items: center;
+        gap: 1em;
+        p {
+          letter-spacing: 1px;
+          font-size: 15px;
+          margin-top: 8px;
         }
-      }
-      &:active {
-        .modal {
-          background-color: $color-contact;
-          display: block;
-          width: 60em;
-          height: 28.625em;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-          box-shadow: 4px 4px 4px rgba($color-primary, $alpha: 0.5);
-          img {
-            width: 26.875em;
-            height: 23.625em;
-          }
-          article {
-            h2 {
-              font-family: "Cormorant Garamond", serif;
-              font-size: 48px;
-              color: $color-primary;
-            }
-            h3 {
-              font-family: "Give You Glory", cursive;
-              font-size: 24px;
-              color: $color-portfolio;
-            }
-            p {
-              font-family: "Hind Vadodara", sans-serif;
-            }
-            button {
-              width: 10em;
-              height: 3.5em;
-              background-color: $color-portfolio;
-              box-shadow: 4px 4px 4px rgba($color-portfolio, $alpha: 0.5);
-            }
+        button {
+          padding: 0.6rem;
+          outline: none;
+          border: none;
+          background: white;
+          color: black;
+          font-weight: bold;
+          cursor: pointer;
+          transition: 0.4s ease;
+          &:hover {
+            background: $color-portfolio;
+            color: $color-about;
           }
         }
       }

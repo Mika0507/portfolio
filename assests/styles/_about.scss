@@ -25,13 +25,13 @@ header {
         color: $color-primary;
         position: relative;
         transition: all .5s;
-        &:after, &:before {
+        &::after, &::before {
           transition: all .5s;
         }
         &:hover {
           color: $color-portfolio;
         }
-        &:after {
+        &::after {
           position: absolute;
           bottom: 0;
           left: 0;
@@ -43,7 +43,7 @@ header {
           background:$color-portfolio;
           height: 2px;
         }
-        &:hover:after {
+        &:hover::after {
           width: 100%;
         }
       }

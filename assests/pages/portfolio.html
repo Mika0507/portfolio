@@ -24,54 +24,78 @@
       </nav>
     </header>
     <main>
-      <!-- Esta página contiene diferentes secciones donde se muestran los proyectos. De momento están ordenados de manera que los hovers de cada uno están justo debajo del article original y una section con la clase modal que es la imagen emergente donde se muestra con más detalle las características del proyecto -->
       <article>
         <div>
-          <h3>Title</h3>
+          <h3>Toquen el DOM</h3>
         </div>
-        <!-- <img src="../images/MacBook Air - 1.jpg" alt="image project" /> -->
-        <article class="hover-card">
-          <a href="#"
-            ><span>HTML</span>
-            <span>CSS</span>
-            <span>JAVASCRIPT</span>
-          </a>
-        </article>
-        <section class="modal">
-          <img src="" alt="imge project" />
-          <article>
-            <h2>Title</h2>
-            <h3>Subtitle</h3>
-            <p></p>
-            <button>VIEW PROJECT</button>
-          </article>
+        <img src="../images/HARMONY (3) 1.png" alt="image project" />
+        <div class="hover-card">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JAVASCRIPT</p>
+          <button class="modal-open" data-modal = 'modalToquenElDom'>VIEW MORE</button>
+        </div>
+      </article>
+      <section class="modal" id="modalToquenElDom">
+        <section class="modal-content">
+          <img src="../images/headerToquenElDom.png" alt="imge project" />
+          <div>
+            <div>
+              <button class="modal-close">X</button>
+            </div>
+            <h2>Toquen el DOM</h2>
+            <h3>HTML, CSS, JAVASCRIPT</h3>
+            <p>
+              "Toquen el Dom" is a group project focused on developing a website
+              for a music school. The platform allows users to learn to play
+              various instruments such as piano, guitar, and bass. The team,
+              consisting of four individuals, employed Mob Programming to
+              collaboratively carry out the project. Jira was utilized for task
+              management and time tracking due to its versatility and
+              effectiveness. The project showcases strong knowledge in HTML and
+              CSS, with particular emphasis on proper HTML structuring to
+              enhance SEO positioning. Vanilla JavaScript was used to handle
+              instrument sounds, enabling functions to be triggered by event
+              listeners for a seamless interactive experience.
+            </p>
+            <div>
+              <button>VIEW PROJECT</button>
+              <button>FIGMA PROJECT</button>
+              <button>GITHUB PROJECT</button> 
+            </div>
+            
+          </div>
         </section>
+      </section>
+
+      <article>
+        <div>
+          <h3>Title</h3>
+        </div>
+        <!-- <img src="" alt="image project" /> -->
+        <div class="hover-card">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JAVASCRIPT</p>
+          <button>VIEW MORE</button>
+        </div>
       </article>
       <article>
         <div>
           <h3>Title</h3>
         </div>
         <!-- <img src="" alt="image project" /> -->
-      </article>
-      <article class="hover-card">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JAVASCRIPT</span>
-      </article>
-      <article>
-        <div>
-          <h3>Title</h3>
+        <div class="hover-card">
+          <p>HTML</p>
+          <p>CSS</p>
+          <p>JAVASCRIPT</p>
+          <button>VIEW MORE</button>
         </div>
-        <!-- <img src="" alt="image project" /> -->
-      </article>
-      <article class="hover-card">
-        <span>HTML</span>
-        <span>CSS</span>
-        <span>JAVASCRIPT</span>
       </article>
     </main>
     <footer>
       <p>&#169 Belén Alonso Peral</p>
     </footer>
+    <script src="../javascript/showModal.js"></script>
   </body>
 </html>

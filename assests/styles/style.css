@@ -7,13 +7,73 @@ body {
   display: grid;
   justify-content: center;
 }
+@media screen and (max-width: 520px) {
+  .home-page {
+    grid-template-columns: 1fr;
+  }
+}
 .home-page section {
   display: grid;
   height: 100vh;
   width: 70vw;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
+  grid-auto-rows: 1fr 1fr;
   overflow: hidden;
+}
+@media screen and (max-width: 520px) {
+  .home-page section {
+    grid-template-columns: 1fr;
+    width: 100%;
+    overflow: visible;
+  }
+  .home-page section .ilustration-about {
+    background-color: #FFF4D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .ilustration-about h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #554333;
+  }
+  .home-page section .ilustration-portfolio {
+    background-color: #DD845A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .ilustration-portfolio h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #E4E7D4;
+  }
+  .home-page section .my-name {
+    background-color: #D3B04D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .my-name h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #FFF4D6;
+  }
+  .home-page section .ilustration-contact {
+    background-color: #E4E7D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .ilustration-contact h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 42px;
+    color: #554333;
+  }
 }
 .home-page section a {
   text-decoration: none;
@@ -25,121 +85,134 @@ body {
   width: 35vw;
   height: 50vh;
 }
+@media screen and (max-width: 520px) {
+  .home-page section div {
+    width: 100%;
+  }
+  .home-page section div img {
+    display: none;
+  }
+}
 .home-page section div img {
   width: 100%;
   height: 100%;
 }
-.home-page section .ilustration-about:hover {
-  background-color: #FFF4D6;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+@media screen and (min-width: 1100px) {
+  .home-page section .ilustration-about:hover {
+    background-color: #FFF4D6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .ilustration-about:hover img {
+    display: none;
+  }
+  .home-page section .ilustration-about:hover h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 68px;
+    color: #554333;
+  }
+  .home-page section .ilustration-portfolio:hover {
+    background-color: #DD845A;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .ilustration-portfolio:hover img {
+    display: none;
+  }
+  .home-page section .ilustration-portfolio:hover h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 68px;
+    color: #E4E7D4;
+  }
+  .home-page section .ilustration-contact:hover {
+    background-color: #E4E7D4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .ilustration-contact:hover img {
+    display: none;
+  }
+  .home-page section .ilustration-contact:hover h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 68px;
+    color: #554333;
+  }
 }
-.home-page section .ilustration-about:hover img {
-  display: none;
-}
-.home-page section .ilustration-about:hover h2 {
-  display: block;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 68px;
-  color: #554333;
-}
-.home-page section .ilustration-portfolio:hover {
-  background-color: #DD845A;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home-page section .ilustration-portfolio:hover img {
-  display: none;
-}
-.home-page section .ilustration-portfolio:hover h2 {
-  display: block;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 68px;
-  color: #E4E7D4;
-}
-.home-page section .ilustration-ui-design {
-  background-color: #D3B04D;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home-page section .ilustration-ui-design h2 {
-  display: block;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 68px;
-  color: #FFF4D6;
-}
-.home-page section .ilustration-contact:hover {
-  background-color: #E4E7D4;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.home-page section .ilustration-contact:hover img {
-  display: none;
-}
-.home-page section .ilustration-contact:hover h2 {
-  display: block;
-  font-family: "Cormorant Garamond", serif;
-  font-size: 68px;
-  color: #554333;
+@media screen and (min-width: 1100px) {
+  .home-page section .my-name {
+    background-color: #D3B04D;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .home-page section .my-name h2 {
+    display: block;
+    font-family: "Cormorant Garamond", serif;
+    font-size: 68px;
+    color: #FFF4D6;
+  }
 }
 
 header {
   height: 20%;
   border-bottom: 4px double #554333;
 }
-header nav {
-  width: 80%;
-  margin: 1em auto;
+@media screen and (min-width: 1100px) {
+  header nav {
+    width: 80%;
+    margin: 1em auto;
+  }
+  header nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header nav ul li {
+    list-style: none;
+  }
+  header nav ul .nav-bar-dot {
+    width: 10px;
+    height: 10px;
+    background-color: #554333;
+    border-radius: 50%;
+  }
+  header nav ul a {
+    text-decoration: none;
+    font-family: "Hind Vadodara", sans-serif;
+    font-weight: 500;
+    font-size: 24px;
+    color: #554333;
+    position: relative;
+    transition: all 0.5s;
+  }
+  header nav ul a::after, header nav ul a::before {
+    transition: all 0.5s;
+  }
+  header nav ul a:hover {
+    color: #DD845A;
+  }
+  header nav ul a::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: ".";
+    color: transparent;
+    background: #DD845A;
+    height: 2px;
+  }
+  header nav ul a:hover::after {
+    width: 100%;
+  }
 }
-header nav ul {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-header nav ul li {
-  list-style: none;
-}
-header nav ul .nav-bar-dot {
-  width: 10px;
-  height: 10px;
-  background-color: #554333;
-  border-radius: 50%;
-}
-header nav ul a {
-  text-decoration: none;
-  font-family: "Hind Vadodara", sans-serif;
-  font-weight: 500;
-  font-size: 24px;
-  color: #554333;
-  position: relative;
-  transition: all 0.5s;
-}
-header nav ul a::after, header nav ul a::before {
-  transition: all 0.5s;
-}
-header nav ul a:hover {
-  color: #DD845A;
-}
-header nav ul a::after {
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  width: 0%;
-  content: ".";
-  color: transparent;
-  background: #DD845A;
-  height: 2px;
-}
-header nav ul a:hover::after {
-  width: 100%;
-}
-
 .page-about {
   background-color: #FFF4D6;
 }
@@ -148,6 +221,12 @@ header nav ul a:hover::after {
   justify-content: space-evenly;
   align-items: center;
   margin-top: 5em;
+}
+@media screen and (max-width: 520px) {
+  .page-about main {
+    flex-direction: column;
+    justify-content: center;
+  }
 }
 .page-about main section:first-child {
   display: flex;
@@ -159,6 +238,11 @@ header nav ul a:hover::after {
   margin-left: 4em;
   border-right: 1px solid #554333;
 }
+@media screen and (max-width: 520px) {
+  .page-about main section:first-child {
+    justify-content: center;
+  }
+}
 .page-about main section:first-child .avatar {
   width: 20em;
 }
@@ -166,6 +250,11 @@ header nav ul a:hover::after {
   font-family: "Cormorant Garamond", serif;
   font-size: 48px;
   color: #554333;
+}
+@media screen and (max-width: 520px) {
+  .page-about main section:first-child h2 {
+    font-size: 36px;
+  }
 }
 .page-about main section:first-child h3 {
   font-family: "Give You Glory", cursive;
@@ -185,18 +274,43 @@ header nav ul a:hover::after {
   grid-template-rows: 1fr 2fr;
   gap: 1em;
 }
+@media screen and (max-width: 520px) {
+  .page-about main section:last-child {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 .page-about main section:last-child h1 {
   font-family: "Cormorant Garamond", serif;
   font-size: 68px;
   color: #554333;
 }
+@media screen and (max-width: 520px) {
+  .page-about main section:last-child h1 {
+    font-size: 42px;
+    text-align: center;
+  }
+}
 .page-about main section:last-child p {
   font-family: "Hind Vadodara", sans-serif;
   font-size: 16px;
 }
+@media screen and (max-width: 520px) {
+  .page-about main section:last-child p {
+    text-align: center;
+  }
+}
 .page-about main section:last-child article {
   display: flex;
   flex-direction: column;
+}
+@media screen and (max-width: 520px) {
+  .page-about main section:last-child article {
+    align-items: center;
+  }
 }
 .page-about main section:last-child article span {
   font-family: "Hind Vadodara", sans-serif;
@@ -222,6 +336,11 @@ header nav ul a:hover::after {
   display: flex;
   align-items: center;
   gap: 3em;
+}
+@media screen and (max-width: 520px) {
+  .page-about main section:last-child article div {
+    flex-direction: column;
+  }
 }
 .page-about main section:last-child article .email {
   display: none;

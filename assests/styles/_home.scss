@@ -4,14 +4,70 @@ body {
 .home-page {
   display: grid;
   justify-content: center;
+  @include mobileMedium() {
+    grid-template-columns: 1fr;
+  }
   section {
     display: grid;
     height: 100vh;
     width: 70vw;
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-auto-rows: 1fr 1fr;
     overflow: hidden;
-    a{
+    @include mobileMedium() {
+      grid-template-columns: 1fr;
+      width: 100%;
+      overflow: visible;
+      .ilustration-about {
+        background-color: $color-about;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 42px;
+          color: $color-primary;
+        }
+      }
+      .ilustration-portfolio {
+        background-color: $color-portfolio;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 42px;
+          color: $color-contact;
+        }
+      }
+      .my-name {
+        background-color: $color-ui-design;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 42px;
+          color: $color-about;
+        }
+      }
+      .ilustration-contact {
+        background-color: $color-contact;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 42px;
+          color: $color-primary;
+        }
+      }
+    }
+    a {
       text-decoration: none;
     }
     h2 {
@@ -20,66 +76,77 @@ body {
     div {
       width: 35vw;
       height: 50vh;
+      @include mobileMedium() {
+        width: 100%;
+        img {
+          display: none;
+        }
+      }
       img {
         width: 100%;
         height: 100%;
       }
     }
-    .ilustration-about:hover {
-      img {
-        display: none;
+    @include desktopSmall() {
+      .ilustration-about:hover {
+        img {
+          display: none;
+        }
+        background-color: $color-about;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 68px;
+          color: $color-primary;
+        }
       }
-      background-color: $color-about;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        display: block;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 68px;
-        color: $color-primary;
+      .ilustration-portfolio:hover {
+        img {
+          display: none;
+        }
+        background-color: $color-portfolio;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 68px;
+          color: $color-contact;
+        }
+      }
+
+      .ilustration-contact:hover {
+        img {
+          display: none;
+        }
+        background-color: $color-contact;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 68px;
+          color: $color-primary;
+        }
       }
     }
-    .ilustration-portfolio:hover {
-      img {
-        display: none;
-      }
-      background-color: $color-portfolio;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        display: block;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 68px;
-        color: $color-contact;
-      }
-    }
-    .ilustration-ui-design {
-      background-color: $color-ui-design;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        display: block;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 68px;
-        color: $color-about;
-      }
-    }
-    .ilustration-contact:hover {
-      img {
-        display: none;
-      }
-      background-color: $color-contact;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      h2 {
-        display: block;
-        font-family: "Cormorant Garamond", serif;
-        font-size: 68px;
-        color: $color-primary;
+    @include desktopSmall() {
+      .my-name {
+        background-color: $color-ui-design;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        h2 {
+          display: block;
+          font-family: "Cormorant Garamond", serif;
+          font-size: 68px;
+          color: $color-about;
+        }
       }
     }
   }

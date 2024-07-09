@@ -106,15 +106,37 @@
       </section>
       <article>
         <div>
-          <h3>Title</h3>
+          <h3>Moviedux page</h3>
         </div>
-        <!-- <img src="" alt="image project" /> -->
+        <img src="../images/moviedux.png" alt="image project" />
         <div class="hover-card">
           <p>HTML</p>
           <p>CSS</p>
           <p>JAVASCRIPT</p>
-          <button>VIEW MORE</button>
+          <p>REACT</p>
+          <button class="modal-open" data-modal = 'modalMoviedux'>VIEW MORE</button>
         </div>
+      </article>
+      <section class="modal" id="modalMoviedux">
+        <section class="modal-content">
+          <img src="../images/moviedux.png" alt="imge project" />
+          <div>
+            <div>
+              <button class="modal-close">X</button>
+            </div>
+            <h2>Moviedux Page</h2>
+            <h3>React, html, Css, JavaScript</h3>
+            <p>
+              This web application, developed in React, allows users to search and filter movies by name, category, or rating. The data is sourced from an internal JSON file. The useState and useEffect hooks are used to manage state and side effects, respectively. The useState hook handles the local state of the filters and the movie list, while useEffect loads the initial movie data using fetch. The user interface updates in real-time based on the applied search criteria and filters.
+            </p>
+            <div>
+              <button><a href="https://movie-dux.vercel.app/" target="_blank">VIEW PROJECT</a></button>
+              <button><a href="https://github.com/Mika0507/movieDux" target="_blank">GITHUB PROJECT</a></button>
+            </div>
+            
+          </div>
+        </section>
+      </section>
       </article>
     </main>
     <footer>
